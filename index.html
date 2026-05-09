@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<!-- Define o idioma da página como português brasileiro -->
+
+<head>
+    <!-- Metadados da página -->
+    <meta charset="UTF-8">
+    <title>Portfolio de Desenvolvedor Front-End</title>
+    <meta name="description" content="Portfolio de desenvolvedor front-end com projetos e serviços em HTML, CSS e JavaScript.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Fonte externa do Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <!-- Link para o arquivo CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Cabeçalho da página com navegação -->
+    <header>
+        <h1>Portfólio</h1>
+        <!-- Botão para menu mobile -->
+        <button id="menu-toggle" aria-label="Toggle menu">☰</button>
+        <nav class="nav-menu">
+            <a href="#home">Home</a>
+            <a href="#about">Sobre</a>
+            <a href="#services">Serviços</a>
+            <a href="#portfolio">Portfólio</a>
+            <a href="#contact">Contato</a>
+        </nav>
+    </header>
+
+    <!-- Conteúdo principal da página -->
+    <main>
+        <!-- Seção inicial com apresentação -->
+        <section id="home" class="home">
+            <article class="home-text">
+                <h2>Olá, eu sou <span>Dev Fullstack</span></h2>
+                <p>Crio sites modernos, rápidos e responsivos.</p>
+                <a href="#contact" class="btn">Fale comigo</a>
+            </article>
+        </section>
+
+        <!-- Seção sobre mim -->
+        <section id="about" class="about">
+            <h2>Sobre mim</h2>
+            <article>
+                <p>
+                    Sou estudante de Análise e Desenvolvimento de Sistemas (ADS) pelo Senac-PR, em busca de uma oportunidade de estágio para aplicar e aprimorar conhecimentos em HTML, CSS, Git e lógica de programação, além de ampliar minha experiência prática no desenvolvimento
+                    de soluções tecnológicas. Tenho grande interesse em aprender novas linguagens, frameworks e ferramentas utilizadas no mercado, especialmente nas áreas de desenvolvimento web e software. Possuo formação complementar pelo SESC São José
+                    – Instituição Franciscana Bom Jesus (Centro) e mantenho uma postura proativa na busca por novos aprendizados e desafios que contribuam para meu crescimento profissional na área de tecnologia. Valorizo o aprendizado contínuo e a troca
+                    de conhecimento em ambientes colaborativos. Além da graduação, realizei cursos extracurriculares de Assistente de TI e Assistente Administrativo, totalizando 400 horas, que fortaleceram minhas habilidades técnicas, organizacionais
+                    e de trabalho em equipe, bem como comunicação, responsabilidade e resolução de problemas. Essas experiências contribuíram para uma visão mais ampla do ambiente corporativo e para minha adaptação a diferentes contextos profissionais.
+                </p>
+            </article>
+        </section>
+
+        <!-- Seção de serviços oferecidos -->
+        <section id="services" class="services">
+            <h2>Serviços</h2>
+
+            <div class="services-grid">
+                <article class="card">
+                    <h3>Web Design</h3>
+                    <p>Layouts modernos e responsivos.</p>
+                </article>
+
+                <article class="card">
+                    <h3>Desenvolvimento</h3>
+                    <p>HTML, CSS, Python e JavaScript.</p>
+                </article>
+
+                <article class="card">
+                    <h3>Otimização</h3>
+                    <p>Sites rápidos e eficientes.</p>
+                </article>
+            </div>
+        </section>
+
+        <!-- Seção de portfólio com projetos -->
+        <section id="portfolio" class="portfolio">
+            <h2>Portfólio</h2>
+
+            <div class="portfolio-grid">
+                <article class="card">
+                    <img src="https://via.placeholder.com/400x250" alt="Captura de tela do Projeto 1">
+                    <h3>Projeto 1</h3>
+                    <a href="#project1">Ver Projeto</a>
+                </article>
+
+                <article class="card">
+                    <img src="https://via.placeholder.com/400x250" alt="Captura de tela do Projeto 2">
+                    <h3>Projeto 2</h3>
+                    <a href="#project2">Ver Projeto</a>
+                </article>
+
+                <article class="card">
+                    <img src="https://via.placeholder.com/400x250" alt="Captura de tela do Projeto 3">
+                    <h3>Projeto 3</h3>
+                    <a href="#project3">Ver Projeto</a>
+                </article>
+            </div>
+        </section>
+
+        <!-- Seção de contato com formulário -->
+        <section id="contact" class="contact">
+            <h2>Contato</h2>
+
+            <form action="/submit" method="post">
+                <label for="name">Seu nome</label>
+                <input id="name" type="text" placeholder="Seu nome" required>
+                <label for="email">Seu email</label>
+                <input id="email" type="email" placeholder="Seu email" required>
+                <label for="message">Sua mensagem</label>
+                <textarea id="message" rows="5" placeholder="Sua mensagem" required></textarea>
+                <button class="btn" type="submit">Enviar</button>
+            </form>
+        </section>
+
+    </main>
+
+    <!-- Rodapé da página -->
+    <footer>
+        <p>© <time datetime="2026">2026</time> · MeuCurriculo</p>
+        <nav class="social-links">
+            <a href="https://linkedin.com/in/seu-perfil" target="_blank" rel="noopener">LinkedIn</a>
+            <a href="https://github.com/seu-usuario" target="_blank" rel="noopener">GitHub</a>
+            <a href="mailto:seu-email@example.com">Email</a>
+        </nav>
+    </footer>
+
+    <!-- Botão para voltar ao topo -->
+    <button id="back-to-top" aria-label="Voltar ao topo">↑</button>
+
+    <!-- Link para o arquivo JavaScript -->
+    <script src="Script.JS"></script>
+</body>
+
+</html>
